@@ -1,0 +1,61 @@
+.root {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 17px 0;
+  border-bottom: 1px solid rgba(108, 99, 255, 1);
+
+  &:hover {
+    .right {
+      opacity: 1;
+    }
+  }
+
+  &.completed {
+    .left {
+      .checkbox {
+        background-color: rgba(108, 99, 255, 1);
+        background-image: url(../../assets/icons/done.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+
+    h4 {
+      text-decoration: line-through;
+    }
+  }
+
+  .left {
+    display: flex;
+    gap: 17px;
+    align-items: center;
+
+    .checkbox {
+      min-width: 26px;
+      min-height: 26px;
+      border-radius: 2px;
+      border: 1px solid rgba(108, 99, 255, 1);
+      background: transparent;
+    }
+
+    h4 {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 20px;
+      text-transform: uppercase;
+    }
+  }
+
+  .right {
+    display: flex;
+    gap: 13px;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.3s ease 0s;
+
+    .icon {
+      background: none;
+    }
+  }
+}

@@ -1,0 +1,59 @@
+.root {
+  .theme {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    min-height: 42px;
+    background: rgba(108, 99, 255, 1);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 22px;
+      height: 22px;
+    }
+  }
+
+  h1 {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 38.87px;
+    text-align: center;
+    margin-bottom: 18px;
+  }
+
+  .row {
+    display: flex;
+    gap: 16px;
+  }
+
+  .search {
+    width: 100%;
+    display: flex;
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+
+    svg path {
+      fill: var(--border-color);
+    }
+
+    input {
+      width: 100%;
+      background: transparent;
+    }
+  }
+
+  select {
+    background: rgba(108, 99, 255, 1);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+}
